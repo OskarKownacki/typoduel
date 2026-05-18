@@ -34,12 +34,12 @@ export default function Home() {
             >
               Home
             </Link>
-            <button
-              type="button"
+            <Link
+              href="/game"
               className="rounded-full border border-lime-400/30 bg-lime-400/15 px-4 py-2 font-medium text-lime-100 shadow-[0_0_0_1px_rgba(132,204,22,0.08)] transition hover:bg-lime-400/22 hover:text-white"
             >
               New game
-            </button>
+            </Link>
           </nav>
         </div>
       </header>
@@ -67,11 +67,8 @@ export default function Home() {
               Match rules
             </p>
             <div className="mt-5 space-y-4 text-sm leading-7 text-emerald-50/80">
-              <p>Checker can correct up to 6 letters each round.</p>
-              <p>
-                Troublemaker can change 5 letters each round to distort words
-                and create typos.
-              </p>
+              <p>Both players can change up to 5 characters each turn.</p>
+              <p>Troublemaker distorts the essay while Checker restores the original letters.</p>
               <p>
                 If more than 4 typos remain after Turn 5, the Troublemaker
                 wins. Otherwise, the Checker wins.

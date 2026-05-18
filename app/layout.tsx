@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "TypoDuel",
-  description: "A dark word-duel homepage for TypoDuel.",
+  description: "A hotseat word duel where one player writes typos and the other repairs them.",
 };
 
 export default function RootLayout({
